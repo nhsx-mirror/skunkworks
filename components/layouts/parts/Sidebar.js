@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { useRouter } from 'next/dist/client/router'
 import { projectsNavigation, playbooksNavigation, teamNavigation } from 'lib/menus'
-import { BookOpenIcon, CogIcon } from '@heroicons/react/solid'
+import { BookOpenIcon, BeakerIcon, UsersIcon } from '@heroicons/react/solid'
 
 // Hepler function
 function classNames(...classes) {
@@ -61,7 +61,7 @@ export default function Sidebar() {
       <>
          <div className="flex-grow flex flex-col space-y-8">
             <div className="space-y-4">
-               <MenuHeading icon={CogIcon}>Projects</MenuHeading>
+               <MenuHeading icon={BeakerIcon}>Projects</MenuHeading>
                <Menu navigation={projectsNavigation} />
             </div>
             <div className="space-y-4">
@@ -69,7 +69,7 @@ export default function Sidebar() {
                <Menu navigation={playbooksNavigation} />
             </div>
             <div className="space-y-4">
-               <MenuHeading icon={BookOpenIcon}>Team</MenuHeading>
+               <MenuHeading icon={UsersIcon}>Team</MenuHeading>
                <Menu navigation={teamNavigation} />
             </div>
          </div>
