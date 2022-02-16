@@ -3,7 +3,6 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import Introduction from 'components/Introduction'
 import PageLayout from 'components/layouts/PageLayout'
-import { posts } from 'cache/post-data'
 
 export default function Search() {
 
