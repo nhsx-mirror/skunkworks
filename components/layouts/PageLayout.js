@@ -1,13 +1,20 @@
 import { Disclosure } from '@headlessui/react'
+import { NextSeo } from 'next-seo'
 import Container from 'components/Container'
 import Sidebar from 'components/layouts/parts/Sidebar'
 import Footer from './parts/Footer'
 import Header from './parts/Header'
 import Pagination from './parts/Pagination'
 
-export default function PageLayout({ children, title, category, formatting, darkBackground, noPagination }) {
+export default function PageLayout({ children, title, summary, category, formatting, darkBackground, noPagination }) {
    return (
       <>
+
+         {/* Meta */}
+         <NextSeo
+            title={`${title} | NHS AI Lab Skunkworks`}
+            description={summary}
+         />
 
          {/* Page */}
          <div className="min-h-full">
