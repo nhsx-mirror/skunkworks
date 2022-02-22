@@ -44,7 +44,7 @@ const Logo = () => (
          <span>
             <img
                className="h-10 w-auto"
-               src={`${prefix}/logo-inverted.svg`}
+               src={`${prefix}/nhs-logo-inverted.svg`}
                alt="NHS"
             />
          </span>
