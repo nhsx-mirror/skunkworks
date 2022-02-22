@@ -3,16 +3,11 @@ import { RecoilRoot } from 'recoil'
 
 import 'styles/index.css'
 
-export default function MyApp({ Component, pageProps }) {
+export default function App({ Component, pageProps }) {
    return (
       <>
          <Head>
             <title>NHS AI Lab Skunkworks | Resources</title>
-            <link rel="icon" href="/favicon.ico" />
-            <link
-               href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap"
-               rel="stylesheet"
-            />
          </Head>
          <RecoilRoot>
             <div className="antialiased">
