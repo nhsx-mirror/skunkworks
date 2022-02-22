@@ -13,10 +13,10 @@ export default function App({ Component, pageProps }) {
                openGraph={{
                   url: 'https://nhsx.github.io/skunkworks/',
                   title: 'NHS AI Lab Skunkworks',
-                  description: 'Finding new ways to use AI for driving forward the early adoption of technology to support health, in both clinical and business contexts.',
+                  description: 'Finding new ways to use AI for driving forward the early adoption of technology to support health and social care, in both clinical and business contexts.',
                   images: [
                      {
-                        url: 'https://nhsx.github.io/skunkworkssocial-cover.jpg',
+                        url: 'https://nhsx.github.io/skunkworks/social-cover.jpg',
                         width: 1200,
                         height: 630,
                         alt: 'NHS AI Lab Skunkworks Social Cover',
