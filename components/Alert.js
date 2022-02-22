@@ -1,6 +1,3 @@
-/* This example requires Tailwind CSS v2.0+ */
-import { ExclamationIcon } from '@heroicons/react/solid'
-
 export default function Example({ title, children }) {
    return (
       <div className={`relative ${title ? 'mt-10' : ''}`}>
