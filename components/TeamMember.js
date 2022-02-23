@@ -2,7 +2,7 @@ import { UserIcon } from "@heroicons/react/outline";
 
 export default function TeamMember({ name, role, bio, image, imageAlt }) {
    return (
-      <div className="relative flex flex-col space-y-8 md:space-y-0 md:space-x-6 md:flex-row my-8 md:my-12">
+      <div className="relative flex flex-col space-y-8 md:space-y-0 md:space-x-6 md:flex-row my-8 md:my-12 not-prose">
 
          {/* Image */}
          <div>
@@ -21,9 +21,9 @@ export default function TeamMember({ name, role, bio, image, imageAlt }) {
 
          {/* Content */}
          <div className="flex-1">
-            {name && <h3 className="text-xl font-bold text-gray-800 mt-0">{name}</h3>}
-            {role && <p className="text-lg font-medium text-gray-500">{role}</p>}
-            {bio && <div className="text-gray-500" dangerouslySetInnerHTML={{ __html: bio }}></div>}
+            {name && <h3 className="text-xl font-bold">{name}</h3>}
+            {role && <p className="text-lg font-medium text-gray-500 mt-1">{role}</p>}
+            {bio && <div className="text-gray-500 mt-4" dangerouslySetInnerHTML={{ __html: bio }}></div>}
          </div>
 
       </div>
