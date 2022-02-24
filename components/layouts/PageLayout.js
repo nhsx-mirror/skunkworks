@@ -64,7 +64,13 @@ export default function PageLayout({ children, title, summary, category, formatt
 
                            {/* Content */}
                            <div className={`${formatting ? 'prose max-w-none' : ''}`}>
+
+                              {/* Title */}
+                              <h1>{title}</h1>
+
+                              {/* Content */}
                               {children}
+
                            </div>
 
                            {/* Pagination */}
