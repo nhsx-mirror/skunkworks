@@ -9,8 +9,6 @@ export default function Document() {
                href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap"
                rel="stylesheet"
             />
-            /* temp addition for testing: */
-            <script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
          </Head>
          <body>
             <Main />
