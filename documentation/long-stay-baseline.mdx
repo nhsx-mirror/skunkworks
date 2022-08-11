@@ -59,13 +59,13 @@ The approach involved:
 
 GHNHSFT performed a SQL export from their EPR system containing ~770,000 records across 99 columns, with significant sparsity across several columns and a section of rows, as visualised by light coloured blocks (null values) in the below image:
 
-![Image of data sparsity](images/long-stay-baseline/sparsity.jpeg)
+![Image of data sparsity](images/long-stay-baseline/sparsity.png)
 
 The population for this study was defined as non-elective, major cases as recorded in the `IS_MAJOR` and `elective_or_non_elective` fields.
 
 Filtering the dataset to this definition resulted in a reduction of ~770,000 rows to ~170,000 rows (78% reduction):
 
-![Image of data sparsity - major cases](images/long-stay-baseline/sparsity-major.jpeg)
+![Image of data sparsity - major cases](images/long-stay-baseline/sparsity-major.png)
 
 Data was processed by:
 
@@ -80,7 +80,7 @@ Data was processed by:
 
 This resulted in ~170,000 rows across ~50 columns as visualised in the below image:
 
-![Image of data sparsity of "clean" data](images/long-stay-baseline/sparsity-clean.jpeg)
+![Image of data sparsity of "clean" data](images/long-stay-baseline/sparsity-clean.png)
 
 The resulting data dictionary is available [here](https://github.com/nhsx/skunkworks-long-stayer-risk-stratification-baseline/blob/main/docs/data-dictionary.csv).
 
