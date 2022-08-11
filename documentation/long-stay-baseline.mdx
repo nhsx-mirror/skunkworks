@@ -349,13 +349,13 @@ Now we can look at the distribution of length of stay for the above categories:
 
 Figure 18. Underlying length of stay by ethnicity - all data.
 
-There is significant variation of length of stay for different ethnic groups, for example with White and black Carribean patients having a length of stay of 2.6 days on average, versus 6.0 days for Irish patients. However, as discussed previously, the count of these groups is 560 and 892 individuals respectively so further tests need to be conducted to understand if the distributions are truly different (e.g. a two-sided Kolmogorov test).
+There is significant variation of length of stay for different ethnic groups, for example with White and black Carribean patients having a length of stay of 2.6 days on average, versus 6.0 days for Irish patients. However, as discussed previously, the count of these groups is 560 and 892 individuals respectively so further statistical hypothesis tests need to be conducted to understand if the distributions are truly different (e.g. a two-sided Kolmogorov-Smirnov test).
 
 ![Underlying length of stay by sex - all data](images/long-stay-baseline/los-mean-los-sex.png)
 
 Figure 19. Underlying length of stay by sex - all data.
 
-Length of stay is almost identical across patient sex.
+Mean length of stay is almost identical across patient sex.
 
 ![Underlying length of stay by index of multiple deprivation - all data](images/long-stay-baseline/los-mean-los-imd.png)
 
@@ -429,6 +429,8 @@ Risk score|Number of patients|% of total patients
 5|10990|2.2
 
 ie. the majority of patients are low risk, and the highest risk group is only 2.2% of the population.
+
+Class and/or sample weights were calculated using the above training imbalances and passed into all models.
 
 Models were trained using default parameters, and evaluated using the [weighted F1 score](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.f1_score.html) which represents the balance between precision and recall, and accounts for class imbalance. F1 scores range from 0 to 1 (where 1 is "ideal" or maximum).
 
