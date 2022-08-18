@@ -1,9 +1,17 @@
+![node version 14](https://img.shields.io/badge/node-v14-green)
+
 # NHS AI Lab Skunkworks Website
 
 This [Next.js](https://nextjs.org/docs) based documentation contains
 the source code of the website [deployed to GitHub Pages](https://nhsx.github.io/skunkworks/).
 
-## Build the site locally
+## Getting started
+
+You will need:
+
+* node v14
+
+It is recommended to use a node package manager like [nvm](https://github.com/nvm-sh/nvm) to manage node versions.
 
 First, install the requirements:
 
@@ -15,15 +23,28 @@ Then, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## Deployment  
+
+Upon merging into `main`, the project is automatically deployed to Github Pages via a Githook Action found in `.github/workflows/gh-pages-deploy.yml`. 
+
 ## Content
 
-Content is stored in MDX format and can be found in `/documentation`. To make a change, create a new PR with the required changes. 
+* Page content is stored in MDX format and can be found in `documentation/`.
+* Images are stored in `public/images/`
+* Site navigation is defined in `lib/menus.js`.
+
+To update content, simply update the corresponding `.mdx` file.
+
+To add a new page:
+
+1. Create a new `.mdx` file in `documentation/` where the filename will be the URL
+2. Update `lib/menus.js` with a link to the new page, following existing examples
+3. Test locally
+4. Raise a new PR to `main`
 
 ## Licence
 
