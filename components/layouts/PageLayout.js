@@ -68,6 +68,10 @@ export default function PageLayout({ children, title, summary, category, formatt
                               {/* Title */}
                               <h1>{title}</h1>
 
+                              <blockquote>
+                                 <p>{summary}</p>
+                              </blockquote>
+
                               {/* Content */}
                               {children}
 
