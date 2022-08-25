@@ -545,6 +545,10 @@ There is opportunity for much future work, which should be balanced with the uti
 3. Focussing on a smaller number of features. Once the most important features are identified, a model using the top e.g. 10 features could be trained and tested.
 4. Building two models - one for short stay and one for long stay. This may help capture the bimodal nature of the underlying dataset.
 5. Including `MINOR` cases. This project focussed on `MAJOR`, `non-elective` cases. 70%+ of the original data belonged to minor cases, and in combination with the above, including this data could lead to an improvement in model performance.
+6. Treating Length of Stay as a discrete variable and applying poisson distribution appropriate approaches to modelling.
+7. Exploring Generalised Linear Models using e.g. [pyGAM](https://pygam.readthedocs.io/en/latest/index.html).
+8. Exploring Bayesian approaches.
+9. Exploring the addition of latent variable(s).
 
 ### Demographic analysis improvements
 
@@ -556,6 +560,14 @@ There is opportunity for much future work, which should be balanced with the uti
 1. Move from Notebooks to python scripts. Jupyter Notebooks are an excellent exploratory tool, but do not work well with version control or automated testing. 
 2. Implement a [Reproducible Analytical Pipeline](https://github.com/NHSDigital/rap-community-of-practice). This will allow reuse of the approaches here and improve overall code quality.
 3. Abstract visualisation code into functions. This will improve readability of the code.
+
+#### Acknowledgments
+
+1. Joe Green, GHNHSFT for presenting the challenge to Skunkworks and supporting problem definition/data selection
+2. Tom Lane, GHNHSFT for support in final stages
+3. Brad Pearce and Peter Coetzee, Polygeist, for the original CNN-based model
+4. Jennifer Hall, Matthew Cooper and Sanson Poon, NHS AI Lab Skunkworks for guidance, code and report review
+5. Chris Mainey, NHSE, for suggestions of additional modelling improvements
 
 Output|Link
 ---|---
