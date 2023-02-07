@@ -401,6 +401,8 @@ Risk Category|Day Range for Risk Category
 
 We keep the training features the same as in the regression models, and encode risk from the actual length of stay as the target feature.
 
+> Postcript: classification models based on increasing risk (1-5) are ordinal in nature, and an appropriate model should be used where different classes are not treated as independent as per the examples in this implementation.
+
 The classification equivalents of the regression models were selected:
 
 Model|Regression version|Classification version
