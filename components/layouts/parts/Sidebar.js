@@ -69,7 +69,7 @@ export default function Sidebar() {
                <Menu navigation={playbooksNavigation} />
             </div>
             <div className="space-y-4">
-               <MenuHeading icon={BookOpenIcon}>Playbooks</MenuHeading>
+               <MenuHeading icon={BookOpenIcon}>Case Study Archive</MenuHeading>
                <Menu navigation={casestudyNavigation} />
             </div>
             <div className="space-y-4">

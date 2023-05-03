@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router'
-import { projectsNavigation, playbooksNavigation, teamNavigation } from 'lib/menus'
+import { projectsNavigation, playbooksNavigation, casestudyNavigation, teamNavigation } from 'lib/menus'
 import Button from 'components/Button'
 
 export default function Pagination() {
@@ -9,7 +9,7 @@ export default function Pagination() {
    const { slug } = router.query
 
    // Merge navigations 
-   const navigation = [...projectsNavigation, ...playbooksNavigation, ...teamNavigation]
+   const navigation = [...projectsNavigation, ...playbooksNavigation, ...casestudyNavigation, ...teamNavigation]
 
    // Get current nav item 
    const currentNavItemIndex = navigation.findIndex(item => item.href === `/${slug}`)
