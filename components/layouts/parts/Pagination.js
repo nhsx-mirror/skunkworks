@@ -16,7 +16,7 @@ export default function Pagination() {
 
    return (
       <div className="flex justify-between items-center">
-         <div>
+         {/* <div>
             {currentNavItemIndex > 0 && (
                <Button href={navigation[currentNavItemIndex - 1].href}>
                   Previous
@@ -29,7 +29,7 @@ export default function Pagination() {
                   Next
                </Button>
             )}
-         </div>
+         </div> */}
       </div>
    )
 }

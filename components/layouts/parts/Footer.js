@@ -16,7 +16,7 @@ export default function Footer() {
                      ))}
                   </div>
                   <div className="flex-shrink-0">
-                     © Copyright 2022 NHS AI Lab
+                     © Copyright 2021-2023 NHS AI Lab
                   </div>
                </div>
                <div className="flex flex-col space-y-3 sm:flex-row sm:items-center sm:space-y-0 sm:space-x-3 text-base">
