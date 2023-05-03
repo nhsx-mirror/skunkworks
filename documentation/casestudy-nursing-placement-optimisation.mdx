@@ -15,10 +15,10 @@ Students training to become nurses undertake placements at teaching hospitals as
 
 
 
-~~~
-*The challenge*  
+
+**The challenge**  
 Can a tool or approach be developed which automatically generates student nurse placement schedules that adhere to the requirements and constraints of the different stakeholders, while additionally providing a more diverse range of placements for the students?
-~~~
+
 
 ### Overview
 Any placement allocation process involves three stakeholders - the Trust who will be coordinating and hosting the students on placement, the university where the students undertake classroom study and where the final degree will be provided, and the students themselves.
@@ -39,12 +39,12 @@ The task posed here is one of optimisation, of which there are many different ap
 - Create a population of objects (in this case, it was a population of potential schedules for all students)
 
 - Apply ‘mutations’ and produce ‘offspring’ from this population of objects
-- - Mutations were produced by randomly changing the allocated ward for a random placement
-- - Offspring were produced by combining schedules e.g. taking the front half of one schedule, and the back half of another schedule and sticking them together to produce a hybrid
+ - Mutations were produced by randomly changing the allocated ward for a random placement
+ - Offspring were produced by combining schedules e.g. taking the front half of one schedule, and the back half of another schedule and sticking them together to produce a hybrid
 
 - Put the ‘mutated’ and ‘offspring’ objects back into the population, and score the population
 
-- - The scoring part is key, as this is what dictates what a ‘good’ schedule looks like. This is where you define what absolutely cannot be in a schedule, and what you’d like a good schedule to have
+ - The scoring part is key, as this is what dictates what a ‘good’ schedule looks like. This is where you define what absolutely cannot be in a schedule, and what you’d like a good schedule to have
 
 - Repeat the process hundreds of times until you have found a schedule which meets all your needs.
 
