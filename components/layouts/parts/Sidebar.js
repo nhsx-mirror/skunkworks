@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { useRouter } from 'next/dist/client/router'
-import { projectsNavigation, playbooksNavigation, teamNavigation } from 'lib/menus'
+import { projectsNavigation, playbooksNavigation, casestudyNavigation, teamNavigation } from 'lib/menus'
 import { BookOpenIcon, BeakerIcon, UsersIcon } from '@heroicons/react/solid'
 
 // Hepler function
@@ -67,6 +67,10 @@ export default function Sidebar() {
             <div className="space-y-4">
                <MenuHeading icon={BookOpenIcon}>Playbooks</MenuHeading>
                <Menu navigation={playbooksNavigation} />
+            </div>
+            <div className="space-y-4">
+               <MenuHeading icon={BookOpenIcon}>Playbooks</MenuHeading>
+               <Menu navigation={casestudyNavigation} />
             </div>
             <div className="space-y-4">
                <MenuHeading icon={UsersIcon}>Team</MenuHeading>
